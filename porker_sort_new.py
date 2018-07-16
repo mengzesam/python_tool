@@ -31,6 +31,7 @@ class porker():
             elif offset==1:
                 if NUM==1:
                     index=next_first
+                    offset=0
                 else:
                     index=next_first+step
             step=2*step
