@@ -1,3 +1,6 @@
+#command line:
+##python findcontinuetime.py key=4 time=2 date=1 continue=15 min=49.967 max=50.033 encoding=gb2312 data2.csv out.csv
+
 import sys
 import pandas
 
@@ -74,6 +77,6 @@ if __name__ == "__main__":
             contsecs=1
         if((pos+off)%1000==0):
             print(pos+off)     
-    print('满足条件的有{}处'.format(count))
+    print('count={}'.format(count))
     if(count>0):
         out_data.to_csv(outfile,index=False,header=False)
